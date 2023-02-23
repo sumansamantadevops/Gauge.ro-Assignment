@@ -1,0 +1,20 @@
+1. Should Nginx be preferred against Apache for a static website? Please provide some reasons for your choice.
+
+For hosting web servers , Nginx is slightly better than Apache . Because , Nginx can handle high traffic . 
+On the other side Apache is suitable for servers which receive lower levels of traffic i.e., 1000 requests
+per hour . Memory consumption of NGINX is also lower than Apache .  Nginx is better for reverse proxy . 
+NGINX is not designed for native processing of dynamic content , it has to pass to an external processor 
+to handle PHP and other dynamic content requests . Apache interprets dynamic content directly and delivers 
+the content to the website visitor .  So , Nginx is winner in some case like high performance , reverse proxy ,
+static content delivery , flexibility .
+
+2. How will you delete a docker image that does not get deleted easily?
+
+If a docker image does not get delete easily , we can forcefully delete the image by using "docker rmi -f  <ImageID/Name>" . 
+Sometimes an image with no repository tag is difficult delete , for that we can use docker image prune . It will delete all 
+the dangling Image ( Image with no repository tag) .
+
+3. What tools would you use to monitor servers around the globe and what kind of notifications would you set for alarms?
+
+We can use Nagios , Datadog to monitor servers . Nagios sends alerts when critical infrastructure components fail and recover,
+providing administrators with notice of important events . Alerts can be delivered via email, SMS, or custom script.
