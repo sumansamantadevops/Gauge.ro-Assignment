@@ -11,7 +11,7 @@ static content delivery , flexibility .
 2. How will you delete a docker image that does not get deleted easily?
 
 If a docker image does not get delete easily , we can forcefully delete the image by using "docker rmi -f  <ImageID/Name>" . 
-Sometimes an image with no repository tag is difficult delete , for that we can use docker image prune . It will delete all 
+Sometimes an image with no repository tag is difficult to delete , for that we can use docker image prune . It will delete all 
 the dangling Image ( Image with no repository tag) .
 
 3. What tools would you use to monitor servers around the globe and what kind of notifications would you set for alarms?
